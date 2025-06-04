@@ -7,3 +7,8 @@
 ```markdown
 When I hear rain on my roof, I _______ in my kitchen.
 ```
+
+```python
+int a = 10
+print(a)
+```
