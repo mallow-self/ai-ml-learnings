@@ -69,6 +69,10 @@
       
     </div>
     
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
     
       
 
@@ -251,9 +255,63 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#basic-configuration-mkdocsyml" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      🔧 Basic Configuration (mkdocs.yml)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Common Extensions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Plugins
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Directory Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-options-for-material-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖼️ Extra Options (for Material theme)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Deployment (GitHub Pages)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serve-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Serve Locally
     </span>
   </a>
   
@@ -371,9 +429,63 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#basic-configuration-mkdocsyml" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      🔧 Basic Configuration (mkdocs.yml)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Common Extensions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Plugins
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Directory Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-options-for-material-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖼️ Extra Options (for Material theme)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Deployment (GitHub Pages)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serve-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Serve Locally
     </span>
   </a>
   
@@ -404,12 +516,94 @@
 <li><code>mkdocs build</code> - Build the documentation site.</li>
 <li><code>mkdocs -h</code> - Print help message and exit.</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<p>Here’s a <strong>MkDocs configuration cheat sheet</strong> to help you quickly set up and customize your documentation project using the <code>mkdocs.yml</code> config file.</p>
+<hr />
+<h2 id="basic-configuration-mkdocsyml">🔧 Basic Configuration (<code>mkdocs.yml</code>)</h2>
+<pre><code class="language-yaml">site_name: My Project Docs
+site_url: https://example.com
+site_description: Documentation for my AI/ML learning
+site_author: Rishi
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - ML:
+      - Basics: ml/basics.md
+      - Models: ml/models.md
+  - AI:
+      - Concepts: ai/concepts.md
+      - Tools: ai/tools.md
+
+theme:
+  name: material  # Recommended theme
+  palette:
+    primary: blue
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+docs_dir: docs
+site_dir: site
 </code></pre>
+<hr />
+<h2 id="common-extensions">🧩 Common Extensions</h2>
+<pre><code class="language-yaml">markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+</code></pre>
+<hr />
+<h2 id="plugins">🚀 Plugins</h2>
+<pre><code class="language-yaml">plugins:
+  - search
+  - mkdocstrings  # for API docs (e.g., Python)
+  - git-revision-date
+</code></pre>
+<blockquote>
+<p>Install with:
+<code>pip install mkdocs-material mkdocstrings mkdocs-git-revision-date-plugin</code></p>
+</blockquote>
+<hr />
+<h2 id="directory-structure">📁 Directory Structure</h2>
+<pre><code class="language-bash">project/
+├── docs/
+│   ├── index.md
+│   ├── about.md
+│   └── ml/
+│       └── basics.md
+├── mkdocs.yml
+</code></pre>
+<hr />
+<h2 id="extra-options-for-material-theme">🖼️ Extra Options (for Material theme)</h2>
+<pre><code class="language-yaml">extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername
+</code></pre>
+<hr />
+<h2 id="deployment-github-pages">📦 Deployment (GitHub Pages)</h2>
+<pre><code class="language-bash">pip install mkdocs ghp-import
+mkdocs build
+ghp-import site
+git push origin gh-pages
+</code></pre>
+<p>Or simpler with Material:</p>
+<pre><code class="language-bash">mkdocs gh-deploy
+</code></pre>
+<hr />
+<h2 id="serve-locally">🌐 Serve Locally</h2>
+<pre><code class="language-bash">mkdocs serve
+</code></pre>
+<hr />
 
 
 
@@ -458,7 +652,7 @@ docs/
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": 1.0}</script>
     
     
       <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
