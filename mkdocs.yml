@@ -5,11 +5,21 @@ site_author: Rishikesh
 theme:
   name: material
   palette:
-    primary: blue
-    accent: indigo
-  font:
-    text: Roboto
-    code: Roboto Mono
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 nav:
   - Home: index.md
