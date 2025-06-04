@@ -1,0 +1,8 @@
+site_name: AI/ML Notes by Rishi
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - ML Basics:
+    - Basic: ml-basics.md
