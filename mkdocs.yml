@@ -1,8 +1,40 @@
-site_name: AI/ML Notes by Rishi
+site_name: AI/ML Notes
+site_description: Documentation for my AI/ML learning
+site_author: Rishikesh
+
 theme:
   name: material
+  palette:
+    primary: blue
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 nav:
   - Home: index.md
-  - ML Basics:
+  - ML:
     - Basic: ml-basics.md
+  - Mkdocs-config: cheatsheet.md
+
+extra:
+  version: 1.0
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rishicollinz
+
+docs_dir: docs
+site_dir: site
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
