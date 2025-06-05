@@ -26,6 +26,7 @@ nav:
   - ML:
     - Basic: ml-basics.md
     - Roadmap: roadmap.md
+    - Vector-Database: vector-database.md
   - Mkdocs-config: cheatsheet.md
 
 extra:
