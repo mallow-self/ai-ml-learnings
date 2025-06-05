@@ -20,7 +20,7 @@
     
     
       
-        <title>Vector database - AI/ML Notes</title>
+        <title>Vector DB - AI/ML Notes</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#vector-db" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Vector database
+              Vector DB
             
           </span>
         </div>
@@ -374,6 +379,70 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what" class="md-nav__link">
+    <span class="md-ellipsis">
+      What
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Indexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-vector-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Some vector Databases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fireship-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fireship video
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -389,9 +458,65 @@
 
 
 
-  <h1>Vector database</h1>
-
-
+<h1 id="vector-db">Vector DB<a class="headerlink" href="#vector-db" title="Permanent link">&para;</a></h1>
+<h2 id="why">Why<a class="headerlink" href="#why" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Over 80% of data is unstructured on the internet like images, videos and audio.</li>
+<li>If we need to store it in relational database, we have to give some context like tags, name, category and so on.</li>
+</ul>
+<h2 id="what">What<a class="headerlink" href="#what" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>A vector database indexes and stores vector embeddings for fast retrieval and similarity search.</p>
+</li>
+<li>
+<p>unstructured_data -&gt; Model(ml) -&gt; vector embedding</p>
+</li>
+<li>
+<p>A vector embedding is a list of numbers which represents the data in different way.</p>
+</li>
+<li>
+<p>We can represent a word, sentence and a image to get numerical number.</p>
+</li>
+<li>
+<p>we can use this number to find euclidean distance(distance between two objects) to find similarity search.</p>
+</li>
+<li>
+<p>d=((x2-x1)^2 +(y2-y1)^2)^1/2</p>
+</li>
+<li>
+<p>So if we need to find difference between thousands of embeddings is slow if done on the fly.</p>
+</li>
+<li>
+<p>So we need to vector indexing.</p>
+</li>
+</ul>
+<h2 id="vector-indexing">Vector Indexing<a class="headerlink" href="#vector-indexing" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Index is same as index in relational db. It is a data structure which sorts the field of increasing performance of searching capabilities.</li>
+</ul>
+<h2 id="use-cases">Use cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Long-term memory for LLMs.</li>
+<li>Semantic search: Search based on the meaning or context.</li>
+<li>Similarity search for text, images, audio or video data.</li>
+<li>Recommendation engine - suggestion similar to past purchases.</li>
+</ol>
+<h2 id="some-vector-databases">Some vector Databases<a class="headerlink" href="#some-vector-databases" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Pinecone</li>
+<li>Weaviate</li>
+<li>Chroma</li>
+<li>Redis</li>
+<li>Qdrant</li>
+<li>Milvus</li>
+<li>Vespa</li>
+</ul>
+<h2 id="fireship-video">Fireship video<a class="headerlink" href="#fireship-video" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A vector is a array of numbers. Embeddings are grouped together based on semantic data.</li>
+<li>Vector db is used to store vector embeddings</li>
+</ul>
 
 
 
