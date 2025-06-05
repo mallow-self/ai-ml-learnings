@@ -25,6 +25,7 @@ nav:
   - Home: index.md
   - ML:
     - Basic: ml-basics.md
+    - Roadmap: roadmap.md
   - Mkdocs-config: cheatsheet.md
 
 extra:
