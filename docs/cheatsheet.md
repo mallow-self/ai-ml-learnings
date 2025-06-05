@@ -1,4 +1,4 @@
-Here’s a **MkDocs configuration cheat sheet** to help you quickly set up and customize your documentation project using the `mkdocs.yml` config file.
+# Cheatsheet
 
 ---
 
