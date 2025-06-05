@@ -14,22 +14,20 @@
       
       
       
-        <link rel="next" href="ml-basics/">
       
-      
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>AI/ML Notes</title>
+        <title>Vector database - AI/ML Notes</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,11 +71,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#ai-ml-learnings" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +87,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="AI/ML Notes" class="md-header__button md-logo" aria-label="AI/ML Notes" data-md-component="logo">
+    <a href=".." title="AI/ML Notes" class="md-header__button md-logo" aria-label="AI/ML Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Vector database
             
           </span>
         </div>
@@ -218,7 +211,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="AI/ML Notes" class="md-nav__button md-logo" aria-label="AI/ML Notes" data-md-component="logo">
+    <a href=".." title="AI/ML Notes" class="md-nav__button md-logo" aria-label="AI/ML Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -233,32 +226,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -269,122 +240,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Objectives
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#topics-covered" class="md-nav__link">
-    <span class="md-ellipsis">
-      🗂️ Topics Covered
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🗂️ Topics Covered">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#artificial-intelligence" class="md-nav__link">
-    <span class="md-ellipsis">
-      🤖 Artificial Intelligence
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-learning" class="md-nav__link">
-    <span class="md-ellipsis">
-      📈 Machine Learning
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#math-for-aiml" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧮 Math for AI/ML
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#projects-practice" class="md-nav__link">
-    <span class="md-ellipsis">
-      📚 Projects &amp; Practice
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tools-frameworks" class="md-nav__link">
-    <span class="md-ellipsis">
-      🚀 Tools &amp; Frameworks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      💡 Getting Started
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-this-site-was-built" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ How This Site Was Built
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributions-feedback" class="md-nav__link">
-    <span class="md-ellipsis">
-      📬 Contributions &amp; Feedback
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -434,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ml-basics/" class="md-nav__link">
+      <a href="../ml-basics/" class="md-nav__link">
         
   
   
@@ -457,7 +312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="roadmap/" class="md-nav__link">
+      <a href="../roadmap/" class="md-nav__link">
         
   
   
@@ -487,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cheatsheet/" class="md-nav__link">
+      <a href="../cheatsheet/" class="md-nav__link">
         
   
   
@@ -519,112 +374,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Objectives
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#topics-covered" class="md-nav__link">
-    <span class="md-ellipsis">
-      🗂️ Topics Covered
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🗂️ Topics Covered">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#artificial-intelligence" class="md-nav__link">
-    <span class="md-ellipsis">
-      🤖 Artificial Intelligence
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-learning" class="md-nav__link">
-    <span class="md-ellipsis">
-      📈 Machine Learning
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#math-for-aiml" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧮 Math for AI/ML
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#projects-practice" class="md-nav__link">
-    <span class="md-ellipsis">
-      📚 Projects &amp; Practice
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tools-frameworks" class="md-nav__link">
-    <span class="md-ellipsis">
-      🚀 Tools &amp; Frameworks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      💡 Getting Started
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-this-site-was-built" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ How This Site Was Built
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributions-feedback" class="md-nav__link">
-    <span class="md-ellipsis">
-      📬 Contributions &amp; Feedback
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -640,73 +389,9 @@
 
 
 
-<h1 id="ai-ml-learnings">🧠 AI / ML Learnings<a class="headerlink" href="#ai-ml-learnings" title="Permanent link">&para;</a></h1>
-<p>Welcome to the <strong>AI &amp; Machine Learning Knowledge Base</strong>!<br />
-This documentation is a curated collection of topics, notes, and experiments that I've gathered while exploring the world of Artificial Intelligence and Machine Learning.</p>
-<hr />
-<h2 id="objectives">📌 Objectives<a class="headerlink" href="#objectives" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Track and organize everything I learn in AI/ML.</li>
-<li>Serve as a personal reference guide.</li>
-<li>Help others who are starting out in the field.</li>
-</ul>
-<hr />
-<h2 id="topics-covered">🗂️ Topics Covered<a class="headerlink" href="#topics-covered" title="Permanent link">&para;</a></h2>
-<h3 id="artificial-intelligence">🤖 Artificial Intelligence<a class="headerlink" href="#artificial-intelligence" title="Permanent link">&para;</a></h3>
-<ul>
-<li>AI Fundamentals</li>
-<li>Agents and Environments</li>
-<li>Search Algorithms</li>
-<li>Expert Systems</li>
-</ul>
-<h3 id="machine-learning">📈 Machine Learning<a class="headerlink" href="#machine-learning" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Supervised vs Unsupervised Learning</li>
-<li>Regression &amp; Classification</li>
-<li>Model Evaluation Metrics</li>
-<li>Real-world ML Use Cases</li>
-</ul>
-<h3 id="math-for-aiml">🧮 Math for AI/ML<a class="headerlink" href="#math-for-aiml" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Linear Algebra</li>
-<li>Probability &amp; Statistics</li>
-<li>Calculus (Basics)</li>
-<li>Optimization Techniques</li>
-</ul>
-<h3 id="projects-practice">📚 Projects &amp; Practice<a class="headerlink" href="#projects-practice" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Jupyter Notebooks</li>
-<li>Hands-on Datasets</li>
-<li>End-to-End ML Pipelines</li>
-</ul>
-<hr />
-<h2 id="tools-frameworks">🚀 Tools &amp; Frameworks<a class="headerlink" href="#tools-frameworks" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Python</strong> (NumPy, Pandas, Scikit-learn)</li>
-<li><strong>TensorFlow</strong> / <strong>PyTorch</strong></li>
-<li><strong>Jupyter Lab / Notebook</strong></li>
-<li><strong>Google Colab</strong></li>
-</ul>
-<hr />
-<h2 id="getting-started">💡 Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
-<p>If you're new to AI/ML, start with:</p>
-<p>👉 <a href="ml-basics/">ML Basics</a>
-👉 <a href="roadmap/">ML Basics</a></p>
-<hr />
-<h2 id="how-this-site-was-built">🛠️ How This Site Was Built<a class="headerlink" href="#how-this-site-was-built" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Built using <a href="https://www.mkdocs.org/">MkDocs</a></li>
-<li>Themed with <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></li>
-<li>Content written in Markdown for simplicity and clarity</li>
-</ul>
-<hr />
-<h2 id="contributions-feedback">📬 Contributions &amp; Feedback<a class="headerlink" href="#contributions-feedback" title="Permanent link">&para;</a></h2>
-<p>This is a personal learning log, but feel free to suggest improvements or corrections on <a href="https://github.com/yourusername/ai-ml-learnings">GitHub</a>.</p>
-<hr />
-<blockquote>
-<p>“The best way to learn is to teach.”<br />
-― Frank Oppenheimer</p>
-</blockquote>
+  <h1>Vector database</h1>
+
+
 
 
 
@@ -770,10 +455,10 @@ This documentation is a curated collection of topics, notes, and experiments tha
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": 1.0}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": 1.0}</script>
     
     
-      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
